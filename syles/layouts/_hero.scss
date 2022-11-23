@@ -8,12 +8,12 @@ header {
         display: flex;
     }
     #logo {
-        margin-top: 55px;
+        margin-top: 35px;
         margin-left: 64px;
         margin-right: 104px;
     }
     nav {
-        margin-top: 55px;
+        margin-top: 35px;
 
         ul {
             white-space: nowrap;
@@ -21,6 +21,11 @@ header {
             list-style: none;
             li {
                 margin-right: 72px;
+                transition: 0.2s;
+                &:hover {
+                    color: grey;
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -68,9 +73,10 @@ header {
             z-index: 100;
             align-items: center;
             margin-left: 50px;
-            margin-bottom: 100px;
             display: flex;
             justify-content: space-around;
+            line-height: 20px;
+            margin-bottom: 30px;
             .slider {
                 margin: 0 20px;
                 display: flex;
@@ -81,6 +87,7 @@ header {
                     font-family: $durkwide;
                     font-size: 22px;
                     white-space: nowrap;
+                    line-height: 5px;
                 }
                 .slide-bar {
                     .background-slide {
@@ -129,6 +136,7 @@ header {
                 writing-mode: vertical-rl;
                 margin-right: 20px;
                 transform: rotate(180deg);
+                color: grey;
             }
             .characteristic-principal {
                 h3 {

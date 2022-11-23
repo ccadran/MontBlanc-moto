@@ -20,7 +20,6 @@ body {
   background: rgb(3, 3, 3);
   color: #fff;
   height: 100vh;
-  overflow: hidden;
 }
 body li {
   font-family: durkwide-medium, sans-serif;
@@ -60,12 +59,12 @@ header .first-2 {
   display: flex;
 }
 header #logo {
-  margin-top: 55px;
+  margin-top: 35px;
   margin-left: 64px;
   margin-right: 104px;
 }
 header nav {
-  margin-top: 55px;
+  margin-top: 35px;
 }
 header nav ul {
   white-space: nowrap;
@@ -74,6 +73,11 @@ header nav ul {
 }
 header nav ul li {
   margin-right: 72px;
+  transition: 0.2s;
+}
+header nav ul li:hover {
+  color: grey;
+  cursor: pointer;
 }
 header #gold {
   width: 581px;
@@ -119,9 +123,10 @@ header #gold {
   z-index: 100;
   align-items: center;
   margin-left: 50px;
-  margin-bottom: 100px;
   display: flex;
   justify-content: space-around;
+  line-height: 20px;
+  margin-bottom: 30px;
 }
 .homepage-container .left-homepage .description .slider {
   margin: 0 20px;
@@ -134,6 +139,7 @@ header #gold {
   font-family: durkwide-medium, sans-serif;
   font-size: 22px;
   white-space: nowrap;
+  line-height: 5px;
 }
 .homepage-container .left-homepage .description .slider .slide-bar .background-slide {
   margin: 0 15px;
@@ -178,6 +184,7 @@ header #gold {
       writing-mode: vertical-rl;
   margin-right: 20px;
   transform: rotate(180deg);
+  color: grey;
 }
 .homepage-container .right-homepage .characteristic .characteristic-principal h3 {
   margin: 10px 0;
@@ -198,10 +205,5 @@ header #gold {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-@media screen and (max-width: 800px) {
-  body {
-    overflow: scroll;
   }
 }/*# sourceMappingURL=index.css.map */
