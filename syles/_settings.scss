@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "durkwide-medium";
+    src: url(/assets/fonts/DrukWide-Medium-Trial.otf);
+}
+@font-face {
+    font-family: "montserrat-regular";
+    src: url(/assets/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: "montserrat-light";
+    src: url(/assets/fonts/Montserrat-Light.ttf);
+}
+
+$durkwide: durkwide-medium, sans-serif;
+$montserrat1: montserrat-regular, sans-serif;
+$montserrat2: montserrat-light, sans-serif;
+$white: #fff;
+$black: rgb(3, 3, 3);
+$grey: #3f3e44;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: $black;
+    color: $white;
+    height: 100vh;
+    overflow: hidden;
+    li {
+        font-family: $durkwide;
+        font-size: 14px;
+    }
+    p {
+        font-family: $montserrat2;
+        font-size: 12px;
+    }
+    .characteristic {
+        h4 {
+            font-family: $montserrat1;
+            font-size: 10px;
+            color: $grey;
+        }
+        h5 {
+            font-family: $montserrat1;
+            font-size: 8px;
+        }
+        h3 {
+            font-family: $durkwide;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        p {
+            font-family: $montserrat1;
+            font-size: 8px;
+        }
+    }
+}

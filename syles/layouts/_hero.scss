@@ -1,0 +1,149 @@
+header {
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .first-2 {
+        align-items: center;
+        display: flex;
+    }
+    #logo {
+        margin-top: 55px;
+        margin-left: 64px;
+        margin-right: 104px;
+    }
+    nav {
+        margin-top: 55px;
+
+        ul {
+            white-space: nowrap;
+            display: flex;
+            list-style: none;
+            li {
+                margin-right: 72px;
+            }
+        }
+    }
+    #gold {
+        width: 581px;
+        height: 287px;
+    }
+}
+
+.homepage-container {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    justify-content: space-between;
+
+    .left-homepage {
+        margin-top: -200px;
+        display: block;
+        z-index: -5;
+        .moto-expo {
+            margin-left: 80px;
+            img {
+                width: 70%;
+                object-fit: contain;
+            }
+
+            display: flex;
+            position: relative;
+
+            &::after {
+                content: url(/assets/img/japonese.png);
+                position: absolute;
+                bottom: 50px;
+                right: -10%;
+                transform: scale(0.7);
+            }
+            &::before {
+                content: url(/assets/img/MONTBLANC\ MOTORCYCLE-circle\ logo.png);
+                position: absolute;
+                right: 20%;
+                top: 10%;
+                animation: logoCircle 10s linear infinite;
+            }
+        }
+        .description {
+            z-index: 100;
+            align-items: center;
+            margin-left: 50px;
+            margin-bottom: 100px;
+            display: flex;
+            justify-content: space-around;
+            .slider {
+                margin: 0 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p {
+                    z-index: 100;
+                    font-family: $durkwide;
+                    font-size: 22px;
+                    white-space: nowrap;
+                }
+                .slide-bar {
+                    .background-slide {
+                        margin: 0 15px;
+                        background: $white;
+                        width: 200px;
+                        height: 2px;
+                        position: relative;
+                        &::after {
+                            content: "";
+                            height: 3px;
+                            width: 70%;
+                            background: #a75b12;
+                            position: absolute;
+                        }
+                        .slide-evo {
+                            background: #a75b12;
+                            z-index: 5;
+                            width: 200px;
+                            height: 2px;
+                        }
+                    }
+                }
+            }
+            .descro-txt {
+                margin-left: 100px;
+                p {
+                    width: 50%;
+                }
+            }
+            .img-descro {
+                margin-top: -150px;
+                height: 300px;
+                width: 250px;
+                background: url(/assets/img/img-descro.png) center/cover;
+            }
+        }
+    }
+    .right-homepage {
+        .characteristic {
+            margin-top: 40px;
+            display: flex;
+            text-transform: uppercase;
+            h4 {
+                text-align: center;
+                writing-mode: vertical-rl;
+                margin-right: 20px;
+                transform: rotate(180deg);
+            }
+            .characteristic-principal {
+                h3 {
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}
+
+@keyframes logoCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

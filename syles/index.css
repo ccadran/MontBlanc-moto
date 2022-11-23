@@ -1,0 +1,207 @@
+@font-face {
+  font-family: "durkwide-medium";
+  src: url(/assets/fonts/DrukWide-Medium-Trial.otf);
+}
+@font-face {
+  font-family: "montserrat-regular";
+  src: url(/assets/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "montserrat-light";
+  src: url(/assets/fonts/Montserrat-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(3, 3, 3);
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+body li {
+  font-family: durkwide-medium, sans-serif;
+  font-size: 14px;
+}
+body p {
+  font-family: montserrat-light, sans-serif;
+  font-size: 12px;
+}
+body .characteristic h4 {
+  font-family: montserrat-regular, sans-serif;
+  font-size: 10px;
+  color: #3f3e44;
+}
+body .characteristic h5 {
+  font-family: montserrat-regular, sans-serif;
+  font-size: 8px;
+}
+body .characteristic h3 {
+  font-family: durkwide-medium, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+body .characteristic p {
+  font-family: montserrat-regular, sans-serif;
+  font-size: 8px;
+}
+
+header {
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+header .first-2 {
+  align-items: center;
+  display: flex;
+}
+header #logo {
+  margin-top: 55px;
+  margin-left: 64px;
+  margin-right: 104px;
+}
+header nav {
+  margin-top: 55px;
+}
+header nav ul {
+  white-space: nowrap;
+  display: flex;
+  list-style: none;
+}
+header nav ul li {
+  margin-right: 72px;
+}
+header #gold {
+  width: 581px;
+  height: 287px;
+}
+
+.homepage-container {
+  display: grid;
+  grid-template-columns: 85% 15%;
+  justify-content: space-between;
+}
+.homepage-container .left-homepage {
+  margin-top: -200px;
+  display: block;
+  z-index: -5;
+}
+.homepage-container .left-homepage .moto-expo {
+  margin-left: 80px;
+  display: flex;
+  position: relative;
+}
+.homepage-container .left-homepage .moto-expo img {
+  width: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.homepage-container .left-homepage .moto-expo::after {
+  content: url(/assets/img/japonese.png);
+  position: absolute;
+  bottom: 50px;
+  right: -10%;
+  transform: scale(0.7);
+}
+.homepage-container .left-homepage .moto-expo::before {
+  content: url(/assets/img/MONTBLANC\ MOTORCYCLE-circle\ logo.png);
+  position: absolute;
+  right: 20%;
+  top: 10%;
+  -webkit-animation: logoCircle 10s linear infinite;
+          animation: logoCircle 10s linear infinite;
+}
+.homepage-container .left-homepage .description {
+  z-index: 100;
+  align-items: center;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.homepage-container .left-homepage .description .slider {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.homepage-container .left-homepage .description .slider p {
+  z-index: 100;
+  font-family: durkwide-medium, sans-serif;
+  font-size: 22px;
+  white-space: nowrap;
+}
+.homepage-container .left-homepage .description .slider .slide-bar .background-slide {
+  margin: 0 15px;
+  background: #fff;
+  width: 200px;
+  height: 2px;
+  position: relative;
+}
+.homepage-container .left-homepage .description .slider .slide-bar .background-slide::after {
+  content: "";
+  height: 3px;
+  width: 70%;
+  background: #a75b12;
+  position: absolute;
+}
+.homepage-container .left-homepage .description .slider .slide-bar .background-slide .slide-evo {
+  background: #a75b12;
+  z-index: 5;
+  width: 200px;
+  height: 2px;
+}
+.homepage-container .left-homepage .description .descro-txt {
+  margin-left: 100px;
+}
+.homepage-container .left-homepage .description .descro-txt p {
+  width: 50%;
+}
+.homepage-container .left-homepage .description .img-descro {
+  margin-top: -150px;
+  height: 300px;
+  width: 250px;
+  background: url(/assets/img/img-descro.png) center/cover;
+}
+.homepage-container .right-homepage .characteristic {
+  margin-top: 40px;
+  display: flex;
+  text-transform: uppercase;
+}
+.homepage-container .right-homepage .characteristic h4 {
+  text-align: center;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  margin-right: 20px;
+  transform: rotate(180deg);
+}
+.homepage-container .right-homepage .characteristic .characteristic-principal h3 {
+  margin: 10px 0;
+}
+
+@-webkit-keyframes logoCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes logoCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    overflow: scroll;
+  }
+}/*# sourceMappingURL=index.css.map */
