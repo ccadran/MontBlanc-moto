@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "durkwide-medium";
+  src: url(/assets/fonts/DrukWide-Medium-Trial.otf);
+}
+@font-face {
+  font-family: "montserrat-regular";
+  src: url(/assets/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "montserrat-light";
+  src: url(/assets/fonts/Montserrat-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(3, 3, 3);
+  max-width: 768px;
+  color: white;
+}
+body li {
+  list-style: none;
+}
+
+.hero-container .logo {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+.hero-container .logo img {
+  margin: 0 62px;
+  display: flex;
+  justify-content: center;
+}
+.hero-container .hero-description {
+  margin: 20px 62px;
+}
+.hero-container .hero-description p {
+  font-family: montserrat-light, sans-serif;
+  font-size: 12px;
+}
+.hero-container nav {
+  margin: 0 62px;
+  padding-top: 40px;
+  border-top: 1px solid #fff;
+}
+.hero-container nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-container nav ul li {
+  font-size: 14px;
+  font-family: montserrat-regular, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}/*# sourceMappingURL=index.css.map */

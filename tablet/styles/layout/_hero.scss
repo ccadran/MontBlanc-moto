@@ -1,0 +1,39 @@
+.hero-container {
+    .logo {
+        margin: 30px 0;
+        display: flex;
+        justify-content: center;
+
+        img {
+            margin: 0 62px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .img-hero {
+        img {
+        }
+    }
+    .hero-description {
+        margin: 20px 62px;
+        p {
+            font-family: $montserrat2;
+            font-size: 12px;
+        }
+    }
+    nav {
+        margin: 0 62px;
+        padding-top: 40px;
+        border-top: 1px solid $white;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            li {
+                font-size: 14px;
+                font-family: $montserrat1;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }
+}
