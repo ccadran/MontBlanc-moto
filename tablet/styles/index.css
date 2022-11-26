@@ -19,6 +19,7 @@ body {
   background: rgb(3, 3, 3);
   max-width: 768px;
   color: white;
+  margin: 0 auto;
 }
 body li {
   list-style: none;
@@ -55,4 +56,40 @@ body li {
   font-family: montserrat-regular, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.section1 .details {
+  overflow-x: scroll;
+  width: 1000px;
+  display: flex;
+}
+.section1 .details .characteristic {
+  margin-top: 40px;
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  margin-right: 40px;
+}
+.section1 .details .characteristic h4 {
+  text-align: center;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  margin-right: 20px;
+  transform: rotate(180deg);
+  color: grey;
+  font-family: montserrat-regular, sans-serif;
+  font-size: 18px;
+}
+.section1 .details .characteristic .characteristic-principal h5 {
+  font-family: montserrat-regular, sans-serif;
+  font-size: 12px;
+}
+.section1 .details .characteristic .characteristic-principal h3 {
+  margin: 10px 0;
+  font-family: durkwide-medium, sans-serif;
+  font-size: 32px;
+}
+.section1 .details .characteristic .characteristic-principal p {
+  font-family: montserrat-regular, sans-serif;
+  font-size: 12px;
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,38 @@
+.section1 {
+    .details {
+        overflow-x: scroll;
+        width: 1000px;
+        display: flex;
+        .characteristic {
+            margin-top: 40px;
+            display: flex;
+            text-transform: uppercase;
+            align-items: center;
+            margin-right: 40px;
+            h4 {
+                text-align: center;
+                writing-mode: vertical-rl;
+                margin-right: 20px;
+                transform: rotate(180deg);
+                color: grey;
+                font-family: $montserrat1;
+                font-size: 18px;
+            }
+            .characteristic-principal {
+                h5 {
+                    font-family: $montserrat1;
+                    font-size: 12px;
+                }
+                h3 {
+                    margin: 10px 0;
+                    font-family: $durkwide;
+                    font-size: 32px;
+                }
+                p {
+                    font-family: $montserrat1;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
