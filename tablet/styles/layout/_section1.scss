@@ -1,8 +1,24 @@
 .section1 {
+    margin-top: 40px;
+    .img-section1 {
+        position: relative;
+        &:after {
+            content: url(/tablet/assets/img/japonese.png);
+            position: absolute;
+            bottom: -5%;
+            left: 0;
+
+            max-width: 768px;
+            overflow: hidden;
+        }
+    }
+
     .details {
-        overflow-x: scroll;
-        width: 1000px;
+        margin: 40px 20px;
+        overflow-x: auto;
+        width: 768px;
         display: flex;
+        white-space: nowrap;
         .characteristic {
             margin-top: 40px;
             display: flex;
@@ -33,6 +49,16 @@
                     font-size: 12px;
                 }
             }
+        }
+    }
+    .section1-description {
+        max-width: 768px;
+        display: grid;
+        grid-template-columns: 50% 50% 20px;
+        p {
+            line-height: 20px;
+            font-family: $montserrat2;
+            font-size: 12px;
         }
     }
 }

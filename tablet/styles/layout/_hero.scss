@@ -3,6 +3,7 @@
         margin: 30px 0;
         display: flex;
         justify-content: center;
+        max-width: 768px;
 
         img {
             margin: 0 62px;
@@ -11,18 +12,25 @@
         }
     }
     .img-hero {
+        display: flex;
+        justify-content: center;
+        overflow-x: hidden;
         img {
+            margin: 0 auto;
         }
     }
     .hero-description {
+        max-width: 768px;
         margin: 20px 62px;
         p {
+            line-height: 20px;
             font-family: $montserrat2;
             font-size: 12px;
         }
     }
     nav {
-        margin: 0 62px;
+        max-width: 768px;
+        margin: 20px 62px;
         padding-top: 40px;
         border-top: 1px solid $white;
         ul {

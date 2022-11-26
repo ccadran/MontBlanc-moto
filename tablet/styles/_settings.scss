@@ -15,7 +15,7 @@ $durkwide: durkwide-medium, sans-serif;
 $montserrat1: montserrat-regular, sans-serif;
 $montserrat2: montserrat-light, sans-serif;
 $white: #fff;
-$black: rgb(3, 3, 3);
+$black: rgb(0, 0, 0);
 $grey: #3f3e44;
 
 * {
@@ -27,6 +27,8 @@ body {
     max-width: 768px;
     color: white;
     margin: 0 auto;
+    overflow-x: hidden;
+
     li {
         list-style: none;
     }

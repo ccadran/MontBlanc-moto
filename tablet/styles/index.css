@@ -16,10 +16,11 @@
 }
 
 body {
-  background: rgb(3, 3, 3);
+  background: rgb(0, 0, 0);
   max-width: 768px;
   color: white;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 body li {
   list-style: none;
@@ -29,21 +30,33 @@ body li {
   margin: 30px 0;
   display: flex;
   justify-content: center;
+  max-width: 768px;
 }
 .hero-container .logo img {
   margin: 0 62px;
   display: flex;
   justify-content: center;
 }
+.hero-container .img-hero {
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.hero-container .img-hero img {
+  margin: 0 auto;
+}
 .hero-container .hero-description {
+  max-width: 768px;
   margin: 20px 62px;
 }
 .hero-container .hero-description p {
+  line-height: 20px;
   font-family: montserrat-light, sans-serif;
   font-size: 12px;
 }
 .hero-container nav {
-  margin: 0 62px;
+  max-width: 768px;
+  margin: 20px 62px;
   padding-top: 40px;
   border-top: 1px solid #fff;
 }
@@ -58,10 +71,26 @@ body li {
   font-weight: bold;
 }
 
+.section1 {
+  margin-top: 40px;
+}
+.section1 .img-section1 {
+  position: relative;
+}
+.section1 .img-section1:after {
+  content: url(/tablet/assets/img/japonese.png);
+  position: absolute;
+  bottom: -5%;
+  left: 0;
+  max-width: 768px;
+  overflow: hidden;
+}
 .section1 .details {
-  overflow-x: scroll;
-  width: 1000px;
+  margin: 40px 20px;
+  overflow-x: auto;
+  width: 768px;
   display: flex;
+  white-space: nowrap;
 }
 .section1 .details .characteristic {
   margin-top: 40px;
@@ -91,5 +120,15 @@ body li {
 }
 .section1 .details .characteristic .characteristic-principal p {
   font-family: montserrat-regular, sans-serif;
+  font-size: 12px;
+}
+.section1 .section1-description {
+  max-width: 768px;
+  display: grid;
+  grid-template-columns: 50% 50% 20px;
+}
+.section1 .section1-description p {
+  line-height: 20px;
+  font-family: montserrat-light, sans-serif;
   font-size: 12px;
 }/*# sourceMappingURL=index.css.map */
