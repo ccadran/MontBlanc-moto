@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "durkwide-medium";
+  src: url(/assets/fonts/DrukWide-Medium-Trial.otf);
+}
+@font-face {
+  font-family: "montserrat-regular";
+  src: url(/assets/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "montserrat-light";
+  src: url(/assets/fonts/Montserrat-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  background: rgb(0, 0, 0);
+  max-width: 600px;
+  color: white;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.hero-container .logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.hero-container img {
+  margin: 0 auto 90px auto;
+}
+.hero-container .hero-txt {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin: 0 20px;
+}
+.hero-container .hero-txt h4 {
+  font-size: 18px;
+  font-family: durkwide-medium, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.hero-container .hero-txt p {
+  font-family: montserrat-light, sans-serif;
+  font-size: 12px;
+  line-height: 200%;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section1 .details {
+  margin: 40px 20px;
+  overflow-x: auto;
+  width: 768px;
+  display: flex;
+  white-space: nowrap;
+}
+.section1 .details .characteristic {
+  margin-top: 40px;
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  margin-right: 40px;
+}
+.section1 .details .characteristic h4 {
+  text-align: center;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  margin-right: 20px;
+  transform: rotate(180deg);
+  color: grey;
+  font-family: montserrat-regular, sans-serif;
+  font-size: 18px;
+}
+.section1 .details .characteristic .characteristic-principal h5 {
+  font-family: montserrat-regular, sans-serif;
+  font-size: 12px;
+}
+.section1 .details .characteristic .characteristic-principal h3 {
+  margin: 10px 0;
+  font-family: durkwide-medium, sans-serif;
+  font-size: 32px;
+}
+.section1 .details .characteristic .characteristic-principal p {
+  font-family: montserrat-regular, sans-serif;
+  font-size: 12px;
+}
+.section1 .slider {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section1 .slider p {
+  z-index: 100;
+  font-family: durkwide-medium, sans-serif;
+  font-size: 22px;
+  white-space: nowrap;
+  line-height: 5px;
+}
+.section1 .slider .slide-bar .background-slide {
+  margin: 0 15px;
+  background: #fff;
+  width: 200px;
+  height: 2px;
+  position: relative;
+}
+.section1 .slider .slide-bar .background-slide::after {
+  content: "";
+  height: 3px;
+  width: 70%;
+  background: #a75b12;
+  position: absolute;
+}
+.section1 p {
+  margin: 20px 20px;
+  font-family: montserrat-light, sans-serif;
+  font-size: 12px;
+  line-height: 200%;
+}
+.section1 .buy-container {
+  display: flex;
+  margin: 0 20px 50px 20px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  justify-content: center;
+}
+.section1 .buy-container .like {
+  height: 72px;
+  width: 72px;
+  border: 1px solid orange;
+  border-radius: 32px 0 32px 0;
+}
+.section1 .buy-container .cart {
+  height: 72px;
+  width: 280px;
+  border: 1px solid orange;
+  border-radius: 32px 0 32px 0;
+}/*# sourceMappingURL=index.css.map */

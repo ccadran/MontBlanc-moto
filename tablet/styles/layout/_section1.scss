@@ -2,6 +2,9 @@
     margin-top: 40px;
     .img-section1 {
         position: relative;
+        img {
+            max-width: 768px;
+        }
         &:after {
             content: url(/tablet/assets/img/japonese.png);
             position: absolute;

@@ -24,13 +24,9 @@ $grey: #3f3e44;
 }
 body {
     scroll-behavior: smooth;
-    background: red;
-    max-width: 768px;
+    background: $black;
+    max-width: 600px;
     color: white;
     margin: 0 auto;
     overflow-x: hidden;
-
-    li {
-        list-style: none;
-    }
 }
