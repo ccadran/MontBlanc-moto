@@ -29,6 +29,7 @@ body {
   justify-content: center;
   flex-direction: column;
   margin-bottom: 30px;
+  overflow: hidden;
 }
 .hero-container .logo {
   display: flex;
@@ -62,6 +63,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 .section1 .details {
   margin: 40px 20px;
