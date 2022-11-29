@@ -68,7 +68,7 @@ body {
 .section1 .details {
   margin: 40px 20px;
   overflow-x: auto;
-  width: 768px;
+  width: 600px;
   display: flex;
   white-space: nowrap;
 }
