@@ -148,6 +148,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
+  margin-right: 10px;
 }
 .section1 .buy-container .like i {
   background-color: #f3ec78;
